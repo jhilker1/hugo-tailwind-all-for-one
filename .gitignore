@@ -1,0 +1,7 @@
+/node_modules/*
+/exampleSite/public
+/exampleSite/hugo_stats.json
+/.projectile
+/resources/*
+assets/css/main.css
+assets/css/postcss.config.js
