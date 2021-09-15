@@ -1,0 +1,2 @@
+#+title: Hugo Tailwind all for One
+A rewrite of my old theme all-for-one, but with tailwindcss instead of halfmoon.
