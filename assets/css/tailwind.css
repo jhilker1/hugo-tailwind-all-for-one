@@ -8,9 +8,7 @@
     body {
         @apply min-h-screen text-gray-900 bg-gray-100 dark:bg-gray-900;
     }
-
-
-
+    
     li {
         @apply ml-5;
     }
@@ -46,7 +44,20 @@
         @apply fixed inset-0 z-10 flex flex-col items-center duration-150 transform shadow-lg w-72 lg:invisible;
     }
 
+    .content {
+        @apply overflow-y-auto markdown dark:markdown-dark grid-in-main max-w-none;
+    }
+
     .article {
-        @apply p-5 overflow-y-auto markdown dark:markdown-dark grid-in-main max-w-none;
+        @apply px-3 pt-3;
+    }
+    /* Resume Specific CSS */
+
+    .resume {
+        @apply h-full grid grid-cols-[2.4fr,0.6fr]
+    }
+
+    .resume > .article > h1,h2,h3,h4,h5,h6 {
+        @apply font-header;
     }
 }

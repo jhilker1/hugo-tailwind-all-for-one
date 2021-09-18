@@ -63,6 +63,11 @@ url = "#"
     url = "/post/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume/"
+    weight = 30
 
     
 

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="resume">
+    <article class="article">
+        {{.Content}}
+    </article>
+    <aside class="border-l-[1px] border-gray-700 dark:border-gray-300">
+        <li class="list-none"><i class="fas fa-home"></i>&nbsp;&nbsp;{{.Page.Params.location}}</li>
+        <li class="list-none"><i class="fas fa-phone"></i>&nbsp;&nbsp;{{.Page.Params.phone}}</li>
+        <li class="list-none"></li>
+    </aside>
+</main> 
+{{ end }}
