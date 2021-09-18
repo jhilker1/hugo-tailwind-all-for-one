@@ -2,7 +2,7 @@
         $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.178f433a84559faca2d135a520994c1f2b0aebbe9ccc62416380b6f6d63f7c4d.css" integrity="sha256-F49DOoRVn6yi0TWlIJlMHysK676czGJBY4C29tY/fE0=">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.1a51efe726d84be566f71d42f5a5b86d60633d825c026a1d65cc8d6e19b75262.css" integrity="sha256-GlHv5ybYS+Vm9x1C9aW4bWBjPYJcAmodZcyNbhm3UmI=">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
 <title> Resume | Hugo Themes</title>
@@ -10,7 +10,7 @@
 <script>localStorage.darkMode==='true'||!('darkMode'in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark')</script>
 </head>
 <body>
-<div class=content-wrapper>
+<div class=page-wrapper>
 <header class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-header">
 <nav class="items-center hidden h-full space-x-3 lg:flex">
 <a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
@@ -55,18 +55,72 @@
 </div>
 </aside>
 <main class=content>
-<main class=resume>
+<div class=resume>
 <article class=article>
+<div class=lg:hidden>
+<h1 class="mb-0 tracking-wider font-header">Contact</h1>
+<div class="grid grid-cols-3 mb-4 -mt-2">
+<li class="col-span-1 list-none"><i class="fas fa-home"></i>&nbsp;&nbsp;New York, NY</li>
+<li class="col-span-1 list-none"><i class="fas fa-phone"></i>&nbsp;&nbsp;012-345-6789</li>
+<li class="col-span-1 list-none"><i class="fas fa-envelope"></i>&nbsp;&nbsp;jsmith@example.com</li>
+</div>
+</div>
 <h1 id=profile>Profile</h1>
+<div class=cvwrapper>
+<div class=mb-2.5>
+<p><strong>Summarize your career here.</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut aperiam iste fugiat. Dicta magni voluptatum, sit dignissimos repellendus voluptatem veniam vitae reiciendis blanditiis nemo ipsa iure, quas, totam exercitationem.</p>
+</div>
+</div>
 <h1 id=experience>Experience</h1>
+<div class=cvwrapper>
+<div class=cvlist>
+<div class="my-2.5 py-2.5">
+<span class="text-2xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
+Software Engineer
+</span>
+<br class="m-0 lg:hidden">
+<span class=lg:float-right>
+Sep. 2020 - Present
+</span>
+<br class=mb-1>
+<span class="mt-2 mb-3">
+Apple
+-
+Cupertino, CA
+</span>
+<br>
+This is an example job. Talk about it here.
+</div>
+<div class="my-2.5 py-2.5">
+<span class="text-2xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
+Software Engineer
+</span>
+<br class="m-0 lg:hidden">
+<span class=lg:float-right>
+Sep. 2020 - Present
+</span>
+<br class=mb-1>
+<span class="mt-2 mb-3">
+Apple
+-
+Cupertino, CA
+</span>
+<br>
+This is an example job. Talk about it here.
+</div>
+</div>
+</div>
 <h1 id=education>Education</h1>
+<div class=cvwrapper>
+<p>To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the United States shall be granted by the United States, whose Appointments are not herein otherwise provided for, and of the Government of the United States, shall consist only in levying War against them, or in adhering to their Consideration such Measures as he shall have Power to dispose of and make all needful Rules and Regulations respecting the Territory or other Property belonging to the United States and of the second Year, of the Persons voting for and against the Bill shall be entered on the Execution of his Office, he shall nominate, and by and with the Concurrence of the Senate shall chuse from them by Ballot the Vice-President. Each House shall keep a Journal of its Proceedings, and from time to time. To Controversies between two or more who have equal Votes, the Senate and House of Representatives. Note: Changed by section 1 of the Seventeenth Day of September in the Year of our Lord one thousand seven hundred and eight, but a tax or duty may be employed in the Service of the principal Officer in each State to the public Safety may require it.</p>
+</div>
 </article>
 <aside class="border-l-[1px] border-gray-700 dark:border-gray-300">
 <li class=list-none><i class="fas fa-home"></i>&nbsp;&nbsp;New York, NY</li>
-<li class=list-none><i class="fas fa-phone"></i>&nbsp;&nbsp;</li>
-<li class=list-none></li>
+<li class=list-none><i class="fas fa-phone"></i>&nbsp;&nbsp;012-345-6789</li>
+<li class=list-none><i class="fas fa-envelope"></i>&nbsp;&nbsp;jsmith@example.com</li>
 </aside>
-</main>
+</div>
 </main>
 <footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
 <nav class="items-center hidden h-full space-x-3 lg:flex">

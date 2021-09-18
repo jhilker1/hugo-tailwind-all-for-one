@@ -2,7 +2,7 @@
         $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.178f433a84559faca2d135a520994c1f2b0aebbe9ccc62416380b6f6d63f7c4d.css" integrity="sha256-F49DOoRVn6yi0TWlIJlMHysK676czGJBY4C29tY/fE0=">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.1a51efe726d84be566f71d42f5a5b86d60633d825c026a1d65cc8d6e19b75262.css" integrity="sha256-GlHv5ybYS+Vm9x1C9aW4bWBjPYJcAmodZcyNbhm3UmI=">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
 <title> Rich Content | Hugo Themes</title>
@@ -10,7 +10,7 @@
 <script>localStorage.darkMode==='true'||!('darkMode'in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark')</script>
 </head>
 <body>
-<div class=content-wrapper>
+<div class=page-wrapper>
 <header class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-header">
 <nav class="items-center hidden h-full space-x-3 lg:flex">
 <a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
@@ -63,9 +63,11 @@
 <div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
 <iframe src=https://www.youtube-nocookie.com/embed/ZJthWmvUzzc style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
 </div>
+<br>
 <hr>
 <h2 id=twitter-simple-shortcode>Twitter Simple Shortcode</h2>
 <blockquote class=twitter-tweet><p lang=en dir=ltr>“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href=https://t.co/gcv7SrhvJb>pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
+<br>
 <hr>
 <h2 id=vimeo-simple-shortcode>Vimeo Simple Shortcode</h2>
 <style>.__h_video{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;width:100%;background:#000}.__h_video img{width:100%;height:auto;color:#000}.__h_video .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;cursor:pointer}</style>
