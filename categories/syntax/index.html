@@ -2,7 +2,7 @@
         $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.8ab43a2c236c2c741be853f6489bebeac6817d25693f929d016847b8cc68f5f9.css" integrity="sha256-irQ6LCNsLHQb6FP2SJvr6saBfSVpP5KdAWhHuMxo9fk=">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.178f433a84559faca2d135a520994c1f2b0aebbe9ccc62416380b6f6d63f7c4d.css" integrity="sha256-F49DOoRVn6yi0TWlIJlMHysK676czGJBY4C29tY/fE0=">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
 <title> syntax | Hugo Themes</title>
@@ -15,6 +15,7 @@
 <nav class="items-center hidden h-full space-x-3 lg:flex">
 <a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
 <a href=/hugo-tailwind-all-for-one/post/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Posts</a>
+<a href=/hugo-tailwind-all-for-one/resume/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Resume</a>
 </nav>
 <button class="justify-start p-4 lg:hidden hover:bg-gray-400 dark:hover:bg-gray-700" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
 </button>
@@ -53,8 +54,9 @@
 </a>
 </div>
 </aside>
+<main class=content>
 <main class=article>
-<h1 class=font-header>Syntax</h2>
+<h1 class=font-header>Syntax</h1>
 <ul>
 <h3 class=ml-5>2019</h3>
 <li class=clear-both>
@@ -64,6 +66,7 @@
 </span>
 </li>
 </ul>
+</main>
 </main>
 <footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
 <nav class="items-center hidden h-full space-x-3 lg:flex">
