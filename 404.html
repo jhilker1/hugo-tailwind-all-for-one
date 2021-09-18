@@ -1,0 +1,102 @@
+<!doctype html><html lang=en x-data="{darkMode: false}" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+        $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.8ab43a2c236c2c741be853f6489bebeac6817d25693f929d016847b8cc68f5f9.css" integrity="sha256-irQ6LCNsLHQb6FP2SJvr6saBfSVpP5KdAWhHuMxo9fk=">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
+<title> 404 Page not found | Hugo Themes</title>
+<script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script>
+<script>localStorage.darkMode==='true'||!('darkMode'in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark')</script>
+</head>
+<body>
+<div class=content-wrapper>
+<header class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-header">
+<nav class="items-center hidden h-full space-x-3 lg:flex">
+<a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
+<a href=/hugo-tailwind-all-for-one/post/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Posts</a>
+</nav>
+<button class="justify-start p-4 lg:hidden hover:bg-gray-400 dark:hover:bg-gray-700" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+</button>
+<div class="flex items-center space-x-4">
+<button class="nav-button hover:bg-gray-400 dark:hover:bg-gray-700" @click="darkMode = !darkMode"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z"/></svg>
+</button>
+<div class="p-4 lg:hidden">Mobile</div>
+</div>
+</header>
+<aside class="sidebar bg-blueGray-300 dark:bg-blueGray-700 dark:text-gray-100">
+<span class="items-center mt-5 font-bold uppercase">
+<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/>Hugo Themes</a>
+</span>
+<div class="w-48 h-48 mt-3">
+<img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="User profile pic" class="object-cover h-full min-w-full rounded-full">
+</div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
+<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-gitlab"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-github"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-dev"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-codepen"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</aside>
+<main class=article>
+<h2 class="text-xl font-header">
+Not Found
+</h2>
+</main>
+<footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
+<nav class="items-center hidden h-full space-x-3 lg:flex">
+</nav>
+<div class="ml-5 lg:hidden">Mobile</div>
+<span class="pr-5 ml-auto dark:text-gray-400">
+&copy; 2021-2021 Jacob Hilker
+</span>
+</footer>
+</div>
+<aside class="-translate-x-full sidebar-overlay bg-blueGray-300 dark:bg-blueGray-700 dark:text-gray-100">
+<div class="flex flex-row items-center justify-between">
+<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/ class="p-2 font-semibold uppercase">Hugo Themes</a>
+<button class="justify-start p-4 transition-colors duration-100 hover:bg-gray-400 dark:hover:bg-blueGray-600" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414.0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+</button>
+</div>
+<div class="w-48 h-48 mt-3">
+<img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="user profile picture" class="object-cover h-full min-w-full rounded-full">
+</div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
+<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-gitlab"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-github"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-dev"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-codepen"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</aside>
+</body>
+</html>

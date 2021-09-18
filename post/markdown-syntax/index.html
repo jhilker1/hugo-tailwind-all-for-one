@@ -1,0 +1,239 @@
+<!doctype html><html lang=en x-data="{darkMode: false}" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+        $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.8ab43a2c236c2c741be853f6489bebeac6817d25693f929d016847b8cc68f5f9.css" integrity="sha256-irQ6LCNsLHQb6FP2SJvr6saBfSVpP5KdAWhHuMxo9fk=">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
+<title> Markdown Syntax Guide | Hugo Themes</title>
+<script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script>
+<script>localStorage.darkMode==='true'||!('darkMode'in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark')</script>
+</head>
+<body>
+<div class=content-wrapper>
+<header class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-header">
+<nav class="items-center hidden h-full space-x-3 lg:flex">
+<a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
+<a href=/hugo-tailwind-all-for-one/post/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Posts</a>
+</nav>
+<button class="justify-start p-4 lg:hidden hover:bg-gray-400 dark:hover:bg-gray-700" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+</button>
+<div class="flex items-center space-x-4">
+<button class="nav-button hover:bg-gray-400 dark:hover:bg-gray-700" @click="darkMode = !darkMode"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z"/></svg>
+</button>
+<div class="p-4 lg:hidden">Mobile</div>
+</div>
+</header>
+<aside class="sidebar bg-blueGray-300 dark:bg-blueGray-700 dark:text-gray-100">
+<span class="items-center mt-5 font-bold uppercase">
+<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/>Hugo Themes</a>
+</span>
+<div class="w-48 h-48 mt-3">
+<img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="User profile pic" class="object-cover h-full min-w-full rounded-full">
+</div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
+<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-gitlab"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-github"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-dev"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-codepen"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</aside>
+<main class=article>
+<h2 class=font-header>Markdown Syntax Guide</h2>
+<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+<h2 id=headings>Headings</h2>
+<p>The following HTML <code>&lt;h1></code>—<code>&lt;h6></code> elements represent six levels of section headings. <code>&lt;h1></code> is the highest section level while <code>&lt;h6></code> is the lowest.</p>
+<h1 id=h1>H1</h1>
+<h2 id=h2>H2</h2>
+<h3 id=h3>H3</h3>
+<h4 id=h4>H4</h4>
+<h5 id=h5>H5</h5>
+<h6 id=h6>H6</h6>
+<h2 id=paragraph>Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id=blockquotes>Blockquotes</h2>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h4 id=blockquote-without-attribution>Blockquote without attribution</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h4 id=blockquote-with-attribution>Blockquote with attribution</h4>
+<blockquote>
+<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.
+— Rob Pike<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+</blockquote>
+<h2 id=tables>Tables</h2>
+<p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bob</td>
+<td>27</td>
+</tr>
+<tr>
+<td>Alice</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+<h4 id=inline-markdown-within-tables>Inline Markdown within tables</h4>
+<table>
+<thead>
+<tr>
+<th>Italics</th>
+<th>Bold</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>italics</em></td>
+<td><strong>bold</strong></td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id=code-blocks>Code Blocks</h2>
+<h4 id=code-block-with-backticks>Code block with backticks</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!doctype html&gt;</span>
+&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#f92672>head</span>&gt;
+  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
+  &lt;<span style=color:#f92672>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#f92672>title</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;
+&lt;<span style=color:#f92672>body</span>&gt;
+  &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
+&lt;/<span style=color:#f92672>body</span>&gt;
+&lt;/<span style=color:#f92672>html</span>&gt;
+</code></pre></div><h4 id=code-block-indented-with-four-spaces>Code block indented with four spaces</h4>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id=code-block-with-hugos-internal-highlight-shortcode>Code block with Hugo&rsquo;s internal highlight shortcode</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!doctype html&gt;</span>
+&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#f92672>head</span>&gt;
+  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
+  &lt;<span style=color:#f92672>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#f92672>title</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;
+&lt;<span style=color:#f92672>body</span>&gt;
+  &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
+&lt;/<span style=color:#f92672>body</span>&gt;
+&lt;/<span style=color:#f92672>html</span>&gt;</code></pre></div>
+<h2 id=list-types>List Types</h2>
+<h4 id=ordered-list>Ordered List</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h4 id=unordered-list>Unordered List</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h4 id=nested-list>Nested list</h4>
+<ul>
+<li>Fruit
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</li>
+<li>Dairy
+<ul>
+<li>Milk</li>
+<li>Cheese</li>
+</ul>
+</li>
+</ul>
+<h2 id=other-elements--abbr-sub-sup-kbd-mark>Other Elements — abbr, sub, sup, kbd, mark</h2>
+<p>GIF is a bitmap image format.</p>
+<p>H2O</p>
+<p>Xn + Yn = Zn</p>
+<p>Press CTRL+ALT+Delete to end the session.</p>
+<p>Most salamanders are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</main>
+<footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
+<nav class="items-center hidden h-full space-x-3 lg:flex">
+</nav>
+<div class="ml-5 lg:hidden">Mobile</div>
+<span class="pr-5 ml-auto dark:text-gray-400">
+&copy; 2021-2021 Jacob Hilker
+</span>
+</footer>
+</div>
+<aside class="-translate-x-full sidebar-overlay bg-blueGray-300 dark:bg-blueGray-700 dark:text-gray-100">
+<div class="flex flex-row items-center justify-between">
+<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/ class="p-2 font-semibold uppercase">Hugo Themes</a>
+<button class="justify-start p-4 transition-colors duration-100 hover:bg-gray-400 dark:hover:bg-blueGray-600" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414.0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+</button>
+</div>
+<div class="w-48 h-48 mt-3">
+<img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="user profile picture" class="object-cover h-full min-w-full rounded-full">
+</div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
+<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-gitlab"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-github"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-dev"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fab fa-codepen"></i>
+</a>
+<a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</aside>
+</body>
+</html>
