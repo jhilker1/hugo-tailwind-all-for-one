@@ -69,7 +69,10 @@ url = "#"
     url = "/resume/"
     weight = 30
 
-    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true    
 
 [taxonomies]
 category = "categories"

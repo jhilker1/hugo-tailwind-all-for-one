@@ -6,7 +6,7 @@ x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
   :class="{'dark': darkMode === true}">
 {{- partial "head.html" . -}}
   <body>
-    <div class="content-wrapper">
+    <div class="page-wrapper">
         {{ partial "header/main.html" . }}
         {{ partial "sidebar/fixed.html" . }}
         <main class="content">

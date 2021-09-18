@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
  /* Tailwind Imports */
  @tailwind base;
  @tailwind components;
@@ -16,7 +16,7 @@
 
 @layer components {
 
-    .content-wrapper {
+    .page-wrapper {
         @apply grid h-screen grid-areas-mobile grid-rows-layout lg:grid-areas-desktop grid-cols-layout;
     }
 
@@ -54,10 +54,30 @@
     /* Resume Specific CSS */
 
     .resume {
-        @apply h-full grid grid-cols-[2.4fr,0.6fr]
+        @apply h-full grid grid-cols-1 lg:grid-cols-[2.4fr,0.6fr]
     }
 
     .resume > .article > h1,h2,h3,h4,h5,h6 {
         @apply font-header;
     }
+
+}
+
+@media screen and (max-width: 1023px) {
+   .resume > aside {
+       @apply hidden;
+   } 
+}
+
+.cvwrapper {
+    @apply pl-5 border-l-2 border-gray-400 dark:divide-gray-700;
+}
+
+.cvlist {
+    @apply divide-y-2 divide-gray-400 dark:divide-gray-700;
+}
+
+
+.resume > .article > h1 {
+    @apply mb-5;
 }
