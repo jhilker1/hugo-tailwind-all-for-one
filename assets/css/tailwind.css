@@ -1,0 +1,52 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+ /* Tailwind Imports */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+ @layer base {
+    body {
+        @apply min-h-screen text-gray-900 bg-gray-100 dark:bg-gray-900;
+    }
+
+
+
+    li {
+        @apply ml-5;
+    }
+}
+
+@layer components {
+
+    .content-wrapper {
+        @apply grid h-screen grid-areas-mobile grid-rows-layout lg:grid-areas-desktop grid-cols-layout;
+    }
+
+    .nav-container {
+        @apply flex items-center justify-between lg:space-x-3 h-13;
+    }
+
+    .navbar {
+        @apply items-center hidden h-full space-x-3 lg:flex;
+    }
+
+    .nav-link {
+        @apply block h-full p-3 transition duration-100;
+    }
+
+    .nav-button {
+        @apply h-full p-4;
+    }
+
+    .sidebar {
+        @apply flex-col items-center hidden grid-in-sidebar lg:flex;
+    }
+
+    .sidebar-overlay {
+        @apply fixed inset-0 z-10 flex flex-col items-center duration-150 transform shadow-lg w-72 lg:invisible;
+    }
+
+    .article {
+        @apply p-5 overflow-y-auto markdown dark:markdown-dark grid-in-main max-w-none;
+    }
+}

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html lang="{{.Site.LanguageCode}}" 
+x-data="{darkMode: false}"
+x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+        $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))"        
+  :class="{'dark': darkMode === true}">
+{{- partial "head.html" . -}}
+  <body>
+    <div class="content-wrapper">
+        {{ partial "header/main.html" . }}
+        {{ partial "sidebar/fixed.html" . }}
+        <main class="article">
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer/main.html" . }}
+    </div>
+    {{ partial "sidebar/overlay.html" . }}
+  </body> 
 </html>

@@ -1,0 +1,17 @@
+<footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
+
+<nav class="items-center hidden h-full space-x-3 lg:flex">
+  {{ $currentPage := .}}
+  {{ range .Site.Menus.btm }}
+  {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+   <a href="{{.URL}}" class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700 {{if $active}}border-b-2 border-blue-400{{end}}">{{.Name}}</a> 
+  {{ end }}
+    </nav>
+    <!-- mobile -->
+    <div class="ml-5 lg:hidden">Mobile</div>
+    <!-- copyright -->
+
+    <span class="pr-5 ml-auto dark:text-gray-400">
+   &copy; 2021-{{ now.Format "2006" }} {{.Site.Params.author}}
+    </span>
+</footer>
