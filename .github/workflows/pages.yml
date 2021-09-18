@@ -36,7 +36,7 @@ jobs:
         run: npm run prod
         
       - name: Build hugo
-        run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://jhilker1.github.io/hugo-tailwind-zettelwiki/
+        run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://jhilker1.github.io/hugo-tailwind-all-for-one/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
