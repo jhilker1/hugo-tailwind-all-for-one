@@ -5,7 +5,7 @@
 <link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.9ed03894f20691a9f41c9dc507a3fbc7b7e342f46ecc974115fbc50fcf3cee0c.css" integrity="sha256-ntA4lPIGkan0HJ3FB6P7x7fjQvRuzJdBFfvFD8887gw=">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
-<title> Resume | Hugo Themes</title>
+<title> Projects | Hugo Themes</title>
 <script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script>
 <script>localStorage.darkMode==='true'||!('darkMode'in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark')</script>
 </head>
@@ -15,7 +15,7 @@
 <nav class="items-center hidden h-full space-x-3 lg:flex">
 <a href=/hugo-tailwind-all-for-one/about/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">About</a>
 <a href=/hugo-tailwind-all-for-one/post/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Posts</a>
-<a href=/hugo-tailwind-all-for-one/resume/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700 border-b-2 border-blue-400">Resume</a>
+<a href=/hugo-tailwind-all-for-one/resume/ class="nav-link hover:bg-gray-400 dark:hover:bg-gray-700">Resume</a>
 </nav>
 <button class="justify-start p-4 lg:hidden hover:bg-gray-400 dark:hover:bg-gray-700" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
 </button>
@@ -56,126 +56,90 @@
 <span class="absolute bottom-0 mb-4 text-sm text-gray-700 dark:text-gray-400">&copy;2021-2021 Jacob Hilker</span>
 </aside>
 <main class="content-wrapper dark:scrollbar-track-gray-700">
-<div class=resume>
-<article class=article>
-<div class=lg:hidden>
-<h1 class="mb-0 tracking-wider font-header">Contact</h1>
-<div class="grid grid-cols-3 mb-4 -mt-2">
-<li class="col-span-1 list-none"><i class="fas fa-home"></i>&nbsp;&nbsp;New York, NY</li>
-<li class="col-span-1 list-none"><i class="fas fa-phone"></i>&nbsp;&nbsp;012-345-6789</li>
-<li class="col-span-1 list-none"><i class="fas fa-envelope"></i>&nbsp;&nbsp;jsmith@example.com</li>
+<div class=article>
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<div class=p-6>
+<div class="flex min-w-full">
+<span class="text-xl font-bold font-header">Hello Python</span>
+<span class="invisible px-1 py-2 ml-auto mr-0 text-xs text-white bg-blue-700 rounded rounded-lg lg:visible">Featured Project</span>
 </div>
-</div>
-<h1 id=profile>Profile</h1>
-<div class=cvwrapper>
-<div class=mb-2.5>
-<p><strong>Summarize your career here.</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut aperiam iste fugiat. Dicta magni voluptatum, sit dignissimos repellendus voluptatem veniam vitae reiciendis blanditiis nemo ipsa iure, quas, totam exercitationem.</p>
-</div>
-</div>
-<h1 id=experience>Experience</h1>
-<div class=cvwrapper>
-<div class=cvlist>
-<div class="my-2.5 py-2.5">
-<span class="text-xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
-Software Engineer
+<span class="px-1 py-1 text-xs text-white bg-blue-700 rounded rounded-lg lg:hidden">Featured Project</span>
+<div class="space-x-1 sm:mt-2 lg:mt-0">
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-python-plain></i>&nbsp;Python
 </span>
-<br class="m-0 lg:hidden">
-<span class="mr-3 lg:float-right">
-Sep 2020 - Present
+</div>
+<div class="block mt-4">
+A hello world project, written in Python.
+</div>
+</div>
+</div>
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<div class=p-6>
+<div class="flex min-w-full">
+<span class="text-xl font-bold font-header">Hello NodeJS</span>
+<span class="invisible px-1 py-2 ml-auto mr-0 text-xs text-white bg-blue-700 rounded rounded-lg lg:visible">Featured Project</span>
+</div>
+<span class="px-1 py-1 text-xs text-white bg-blue-700 rounded rounded-lg lg:hidden">Featured Project</span>
+<div class="space-x-1 sm:mt-2 lg:mt-0">
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-javascript-plain></i>&nbsp;NodeJS
 </span>
-<br class=mb-1>
-<span class="mt-2 mb-3">
-Apple - Cupertino, CA
+</div>
+<div class="block mt-4">
+A hello world project, written in Javascript.
+</div>
+</div>
+</div>
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<div class=p-6>
+<div class="flex min-w-full">
+<span class="text-xl font-bold font-header">Hello C++</span>
+<span class="invisible px-1 py-2 ml-auto mr-0 text-xs text-white bg-blue-700 rounded rounded-lg lg:visible">Featured Project</span>
+</div>
+<span class="px-1 py-1 text-xs text-white bg-blue-700 rounded rounded-lg lg:hidden">Featured Project</span>
+<div class="space-x-1 sm:mt-2 lg:mt-0">
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-cplusplus-plain></i>&nbsp;C++
 </span>
-<br>
-<div class=mt-3>
-This is an example job. Talk about it here.
+</div>
+<div class="block mt-4">
+A hello world project, written in C++. It even segfaults!
 </div>
 </div>
-<div class="my-2.5 py-2.5">
-<span class="text-xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
-Junior Security Researcher
+</div>
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<div class=p-6>
+<div class="flex min-w-full">
+<span class="text-xl font-bold font-header">Linux</span>
+</div>
+<div class="space-x-1 sm:mt-2 lg:mt-0">
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-linux-plain></i>&nbsp;C
 </span>
-<br class="m-0 lg:hidden">
-<span class="mr-3 lg:float-right">
-Sep 2019 - Jun 2020
+</div>
+<div class="block mt-4">
+A free and open-source kernel.
+</div>
+</div>
+</div>
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+<div class=p-6>
+<div class="flex min-w-full">
+<span class="text-xl font-bold font-header">A Cool Project</span>
+</div>
+<div class="space-x-1 sm:mt-2 lg:mt-0">
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-postgresql-plain></i>&nbsp;PostgreSQL
 </span>
-<br class=mb-1>
-<span class="mt-2 mb-3">
-Google - Mountain View, CA
+<span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+<i class=devicon-flutter-plain></i>&nbsp;Flutter
 </span>
-<br>
-<div class=mt-3>
-This is an example job. Talk about it here.
+</div>
+<div class="block mt-4">
+A cool project, written in PostgreSQL and Flutter.
 </div>
 </div>
-</div>
-</div>
-<h1 id=education>Education</h1>
-<div class=cvwrapper>
-<div class=cvlist>
-<div class="my-2.5 py-2.5">
-<span class="text-xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
-B.Sc., Computer Science
-</span>
-<br class="m-0 lg:hidden">
-<span class="mr-3 lg:float-right">
-Aug 2018 - May 2020
-</span>
-<br class=mb-1>
-<span class="mt-2 mb-3">
-New York University - New York, NY
-</span>
-<br>
-<div class=mt-3>
-Here is where some relevant coursework would go. You could also talk a bit about your minor here.
-</div>
-</div>
-<div class="my-2.5 py-2.5">
-<span class="text-xl text-gray-900 dark:text-gray-100 font-header tracking-[1px] my-5">
-Associate's Degree, Information Technology
-</span>
-<br class="m-0 lg:hidden">
-<span class="mr-3 lg:float-right">
-Sep 2016 - May 2018
-</span>
-<br class=mb-1>
-<span class="mt-2 mb-3">
-Local Community College - Philadelphia, PE
-</span>
-<br>
-<div class=mt-3>
-Here is where some relevant coursework would go. You could also talk a bit about your minor here.
-</div>
-</div>
-</div>
-</div>
-</article>
-<aside class="border-l-[1px] !border-gray-400 dark:!border-gray-700">
-<div class=mt-3>
-<li class=list-none><i class="fas fa-home"></i>&nbsp;&nbsp;New York, NY</li>
-<li class=list-none><i class="fas fa-phone"></i>&nbsp;&nbsp;012-345-6789</li>
-<li class=list-none><i class="fas fa-envelope"></i>&nbsp;&nbsp;jsmith@example.com</li>
-</div>
-<div class=ml-5>
-<h3 class="!mt-5 !tracking-wide !font-normal !text-2xl !mb-0 !pb-0">Skills</h3>
-<strong class="text-[14px] font-bold underline">Technical</strong>
-<li class="!ml-2 list-none">Python</li>
-<li class="!ml-2 list-none">Git</li>
-<li class="!ml-2 list-none">HTML/CSS</li>
-<li class="!ml-2 list-none">NodeJS</li>
-<strong class="text-[14px] font-bold underline">Professional</strong>
-<li class="!ml-2 list-none">Communication</li>
-<li class="!ml-2 list-none">Leadership</li>
-<li class="!ml-2 list-none">Problem Solving</li>
-<li class="!ml-2 list-none">Adaptability</li>
-<h3 class="!mt-5 !tracking-[1px] !font-normal !text-2xl !pb-0 !mb-0">Interests</h3>
-<li class="!ml-2 list-none">Snowboarding</li>
-<li class="!ml-2 list-none">Hockey</li>
-<li class="!ml-2 list-none">Guitar</li>
-<li class="!ml-2 list-none">Bass</li>
-</div>
-</aside>
 </div>
 </main>
 <footer class="text-gray-800 bg-gray-200 dark:bg-gray-800 dark:text-gray-200 nav-container grid-in-footer">
