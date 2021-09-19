@@ -11,13 +11,7 @@
     </span>
     <br class="mb-1" />
     <span class="mt-2 mb-3">
-        {{ with .Get "comp"}}
-        {{ . }}
-        {{ end }}
-        -
-        {{ with .Get "city"}}
-        {{ . }}
-        {{ end }}
+        {{ with .Get "comp"}}{{ . }}{{ end }} - {{ with .Get "city"}}{{ . }}{{ end }}
     </span>
     <br>
     <div class="mt-3">
