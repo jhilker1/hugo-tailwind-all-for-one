@@ -4,6 +4,9 @@ layout: resume
 location: New York, NY
 phone: "012-345-6789"
 email: "jsmith@example.com"
+interests: ["Snowboarding", "Hockey", "Guitar", "Bass"]
+skills: ["Python", "Git", "HTML/CSS","NodeJS"] 
+soft_skills: ["Communication", "Leadership", "Problem Solving", "Adaptability"]
 ---
 # Profile
 <div class="cvwrapper">
