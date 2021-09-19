@@ -2,7 +2,7 @@
         $watch('darkMode', value => JSON.stringify(localStorage.setItem('darkMode', value)))" :class="{'dark': darkMode === true}"><head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.c36a08bf49aa5be73c76f845731551b3c70aab570b138a41f16e0cd16721dbae.css" integrity="sha256-w2oIv0mqW+c8dvhFcxVRs8cKq1cLE4pB8W4M0Wch264=">
+<link rel=stylesheet href="https://jhilker1.github.io/hugo-tailwind-all-for-one/css/main.min.5c77a9b6f13b4d2fd337a1dadee5022e44cb4cc9ffababb8dddb0da80c87bee5.css" integrity="sha256-XHeptvE7TS/TN6Ha3uUCLkTLTMn/q6u43dsNqAyHvuU=">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css>
 <title> index | Hugo Themes</title>
@@ -33,7 +33,7 @@
 <img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="User profile pic" class="object-cover h-full min-w-full rounded-full">
 </div>
 <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
-<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<div class="grid w-3/4 grid-cols-6 gap-2 mt-2 place-items-center">
 <a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
 <i class="fab fa-gitlab"></i>
 </a>
@@ -53,6 +53,7 @@
 <i class="fas fa-envelope"></i>
 </a>
 </div>
+<span class="absolute bottom-0 mb-4 text-sm text-gray-700 dark:text-gray-400">&copy;2021-2021 Jacob Hilker</span>
 </aside>
 <main class="content-wrapper dark:scrollbar-track-gray-700">
 <main class=article>
@@ -72,22 +73,22 @@
 <nav class="items-center hidden h-full space-x-3 lg:flex">
 </nav>
 <div class="ml-5 lg:hidden">Mobile</div>
-<span class="pr-5 ml-auto dark:text-gray-400">
+<span class="pr-5 ml-auto text-sm dark:text-gray-400">
 &copy; 2021-2021 Jacob Hilker
 </span>
 </footer>
 </div>
 <aside class="-translate-x-full sidebar-overlay bg-blueGray-300 dark:bg-blueGray-700 dark:text-gray-100">
-<div class="flex flex-row items-center justify-between">
-<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/ class="p-2 font-semibold uppercase">Hugo Themes</a>
-<button class="justify-start p-4 transition-colors duration-100 hover:bg-gray-400 dark:hover:bg-blueGray-600" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414.0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+<div class="flex flex-row items-center w-full">
+<a href=https://jhilker1.github.io/hugo-tailwind-all-for-one/ class="p-2 font-semibold uppercase font-header">Tailwind All For One</a>
+<button class="p-4 ml-auto transition-colors duration-100 hover:bg-gray-400 dark:hover:bg-blueGray-600" x-on:click="document.querySelector('.sidebar-overlay').classList.toggle('-translate-x-full')"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentcolor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414.0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
 </button>
 </div>
 <div class="w-48 h-48 mt-3">
 <img src=https://images.unsplash.com/photo-1630957437294-36e27ba9db1c alt="user profile picture" class="object-cover h-full min-w-full rounded-full">
 </div>
 <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">This is a website.</p>
-<div class="grid w-10/12 grid-cols-3 mt-2 place-items-center">
+<div class="grid w-3/4 grid-cols-6 gap-2 mt-2 place-items-center">
 <a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
 <i class="fab fa-gitlab"></i>
 </a>
@@ -106,7 +107,7 @@
 <a href=# class="col-span-1 text-2xl transition-colors duration-75 hover:text-blue-400">
 <i class="fas fa-envelope"></i>
 </a>
-</div>
+<span class="absolute bottom-0 mb-4 text-sm text-gray-700 dark:text-gray-400">&copy;2021-2021 Jacob Hilker</span>
 </aside>
 </body>
 </html>
