@@ -4,10 +4,16 @@
         {{ partial "resume/contact-mobile.html" .}}
         {{.Content}}
     </article>
-    <aside class="border-l-[1px] border-gray-700 dark:border-gray-300">
-        <li class="list-none"><i class="fas fa-home"></i>&nbsp;&nbsp;{{.Page.Params.location}}</li>
-        <li class="list-none"><i class="fas fa-phone"></i>&nbsp;&nbsp;{{.Page.Params.phone}}</li> 
-        <li class="list-none"><i class="fas fa-envelope"></i>&nbsp;&nbsp;{{.Page.Params.email}}</li>
+    <aside class="border-l-[1px] !border-gray-400 dark:!border-gray-700">
+        <div class="mt-3">
+            <li class="list-none"><i class="fas fa-home"></i>&nbsp;&nbsp;{{.Page.Params.location}}</li>
+            <li class="list-none"><i class="fas fa-phone"></i>&nbsp;&nbsp;{{.Page.Params.phone}}</li> 
+            <li class="list-none"><i class="fas fa-envelope"></i>&nbsp;&nbsp;{{.Page.Params.email}}</li>
+        </div>
+       <hr class="border-0 h-px !border-gray-400 dark:!border-gray-700">
+       <div class="ml-5">
+            <h3>Skills</h3>
+        </div>
     </aside>
 </div> 
 {{ end }}
