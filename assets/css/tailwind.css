@@ -44,8 +44,8 @@
         @apply fixed inset-0 z-10 flex flex-col items-center duration-150 transform shadow-lg w-72 lg:invisible;
     }
 
-    .content {
-        @apply overflow-y-auto markdown dark:markdown-dark grid-in-main max-w-none;
+    .content-wrapper {
+        @apply overflow-y-auto markdown dark:markdown-dark markdown-sm grid-in-main max-w-none scrollbar-thin;
     }
 
     .article {

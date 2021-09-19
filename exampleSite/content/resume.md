@@ -20,7 +20,7 @@ email: "jsmith@example.com"
  This is an example job. Talk about it here. 
 {{</resume/exp>}}
 
-{{<resume/exp title="Software Engineer" comp="Apple" city="Cupertino, CA" start="28 Sep 2020">}}
+{{< resume/exp title="Junior Security Researcher" comp="Google" city="Mountain View, CA" start="19 Sep 2019" end="22 Jun 2020">}}
  This is an example job. Talk about it here. 
 {{</resume/exp>}}
 </div> 
@@ -28,7 +28,13 @@ email: "jsmith@example.com"
 
 # Education
 <div class="cvwrapper">
+<div class="cvlist">
+{{< resume/exp title="B.Sc., Computer Science" comp="New York University" city="New York, NY" start="22 Aug 2018" end="14 May 2020">}} 
+Here is where some relevant coursework would go. You could also talk a bit about your minor here. 
+{{</resume/exp>}}
+{{< resume/exp title="Associate's Degree, Information Technology" comp="Local Community College" city="Philadelphia, PE" start="07 Sep 2016" end="19 May 2018">}}
+Here is where some relevant coursework would go. You could also talk a bit about your minor here. 
+{{</resume/exp>}}
 
-To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the United States shall be granted by the United States, whose Appointments are not herein otherwise provided for, and of the Government of the United States, shall consist only in levying War against them, or in adhering to their Consideration such Measures as he shall have Power to dispose of and make all needful Rules and Regulations respecting the Territory or other Property belonging to the United States and of the second Year, of the Persons voting for and against the Bill shall be entered on the Execution of his Office, he shall nominate, and by and with the Concurrence of the Senate shall chuse from them by Ballot the Vice-President. Each House shall keep a Journal of its Proceedings, and from time to time. To Controversies between two or more who have equal Votes, the Senate and House of Representatives. Note: Changed by section 1 of the Seventeenth Day of September in the Year of our Lord one thousand seven hundred and eight, but a tax or duty may be employed in the Service of the principal Officer in each State to the public Safety may require it.
-
+</div>
 </div>

@@ -6,7 +6,7 @@
     </span>
     <br class="m-0 lg:hidden" />
     <span class="lg:float-right">
-        {{dateFormat "Jan. 2006" (.Get "start")}} - {{if .Get "end"}}{{ dateFormat "Jan. 2006" (.Get
+        {{dateFormat "Jan 2006" (.Get "start")}} - {{if .Get "end"}}{{ dateFormat "Jan 2006" (.Get
         "end")}}{{else}}Present{{end}}
     </span>
     <br class="mb-1" />
@@ -20,5 +20,7 @@
         {{ end }}
     </span>
     <br>
+    <div class="mt-3">
     {{ .Inner | markdownify}}
+    </div>
 </div>

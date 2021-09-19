@@ -103,9 +103,9 @@ module.exports = {
 
   plugins: [
     require('@savvywombat/tailwindcss-grid-areas'),
-    require('tailwind-scrollbar'),
     require('@tailwindcss/typography')({
-        className: 'markdown',
+      className: 'markdown',
     }),
+    require('tailwind-scrollbar'),
   ],
 }

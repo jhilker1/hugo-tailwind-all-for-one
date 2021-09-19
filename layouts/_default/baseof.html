@@ -9,7 +9,7 @@ x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
     <div class="page-wrapper">
         {{ partial "header/main.html" . }}
         {{ partial "sidebar/fixed.html" . }}
-        <main class="content">
+        <main class="content-wrapper dark:scrollbar-track-gray-700">
             {{ block "main" . }}{{ end }}
         </main>
         {{ partial "footer/main.html" . }}
