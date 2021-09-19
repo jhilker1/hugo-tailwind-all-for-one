@@ -4,9 +4,14 @@
  @tailwind components;
  @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
  @layer base {
+    
     body {
-        @apply min-h-screen text-gray-900 bg-gray-100 dark:bg-gray-900;
+        @apply min-h-screen antialiased text-gray-900 bg-gray-100 dark:bg-gray-900;
     }
     
     li {
@@ -61,6 +66,9 @@
         @apply font-header;
     }
 
+    .badge {
+        @apply px-1 py-1 rounded rounded-lg;
+    }
 }
 
 @media screen and (max-width: 1023px) {

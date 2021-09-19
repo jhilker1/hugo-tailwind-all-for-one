@@ -1,3 +1,10 @@
 {{ define "main" }}
+<div class="article">
+    {{range (where (where .Site.RegularPages "Type" "project") ".Params.featured" "==" true).ByWeight }}
+    {{ partial "portfolio/featured.html" . }}
+    {{ end }}
 
+    {{range (where (where .Site.RegularPages "Type" "project") ".Params.featured" "!=" true).ByWeight }}
+    {{ partial "portfolio/project.html" . }}
+    {{ end }}
 {{ end }}

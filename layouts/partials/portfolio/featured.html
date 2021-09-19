@@ -1,0 +1,26 @@
+<div class="m-3 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div class="p-6">
+            <!-- Title and Featured Badge -->
+            <div class="flex min-w-full">
+            <span class="text-xl font-bold font-header">{{.Title}}</span>
+           <span class="invisible px-1 py-2 ml-auto mr-0 text-xs text-white bg-blue-700 rounded rounded-lg lg:visible">Featured Project</span>  
+            </div>
+            <!-- Mobile Span -->
+            <span class="px-1 py-1 text-xs text-white bg-blue-700 rounded rounded-lg lg:hidden">Featured Project</span>
+            <!-- Project Langs -->
+            <div class="space-x-1 sm:mt-2 lg:mt-0">
+
+            {{ range .Page.Params.srclangs}}
+            {{ $name := .name}}
+            {{ $icon := .icon}}
+            <span class="border-gray-700 px-0.5 py-0.5 rounded border-[1px] text-xs dark:border-gray-400">
+                <i class="{{.icon}}"></i>&nbsp;{{.name}}
+            </span>
+            {{ end }}
+            </div>
+            <!-- Project Summary -->
+            <div class="block mt-4">
+            {{ .Summary }}
+            </div>
+        </div>
+</div>  
